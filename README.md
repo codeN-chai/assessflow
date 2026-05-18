@@ -42,6 +42,13 @@ If you're a teacher, typing out 50 questions from a piece of paper takes hours. 
 * **Image Hosting:** Cloudinary
 * **Deployment:** Vercel
 
+## 🧠 What I Learned Building This
+
+This project was a huge learning experience for me. A few of the biggest technical challenges I overcame were:
+1. **AI Image Parsing:** Figuring out how to take raw images, send them to the Gemini API, and force the AI to return perfectly formatted JSON objects for the database.
+2. **Server-Side Timers:** Realizing that client-side countdown timers reset on page reload, so I had to anchor them to `created_at` timestamps in the PostgreSQL database for security.
+3. **Row Level Security (RLS):** Writing custom PostgreSQL policies to ensure a student can *only* read their own test answers, while a teacher can view everyone's.
+
 ## 💻 Getting Started
 
 To run this project locally, follow these steps:
@@ -78,5 +85,5 @@ Open [http://localhost:3000](http://localhost:3000) to view the application.
 ---
 
 <div align="center">
-  <p><b>AssessFlow</b> — Making exams better for everyone.</p>
+  <p><b>AssessFlow</b> — Designed and built by <b>Akshay Raj</b>.</p>
 </div>
