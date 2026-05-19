@@ -19,6 +19,8 @@
 
 **AssessFlow** is a full-stack project I built to solve a simple problem: making online tests shouldn't be annoying, and taking them shouldn't be distracting.
 
+*(**Want to test it out quickly?** Use `teacher@demo.com` or `student@demo.com` with the password `password123` on the Live Demo!)*
+
 If you're a teacher, typing out 50 questions from a piece of paper takes hours. So, I connected **Google Gemini AI** to the app. Now, you can just take a picture of a paper exam, upload it, and the AI turns it into a digital test automatically! 
 
 ## ✨ Cool Things It Does
