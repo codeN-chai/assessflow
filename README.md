@@ -34,6 +34,7 @@ If you're a teacher, typing out 50 questions from a piece of paper takes hours. 
 * 🛡️ **Clean, Dark UI:** No messy sidebars or popups. Just you and the test.
 * ⏲️ **Un-cheatable Timers:** If your laptop dies or you accidentally refresh the page, the timer keeps running in the background. You don't lose any time, and you can't cheat the clock!
 * 🚫 **"Oops" Protection:** The app warns you if you try to hit submit while you still have blank questions left.
+* 📓 **Study Vault (Notes):** Create rich-text study notes and revision materials directly in the app. Paste screenshots or images inline (which auto-upload to Cloudinary) to keep all your study guides in one secure place.
 
 ## 🛠️ Tech Stack
 
