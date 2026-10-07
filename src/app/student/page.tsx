@@ -36,7 +36,7 @@ export default function StudentDashboard() {
       }
     }
     fetchSubmissions();
-  }, [supabase]);
+  }, []);
 
   const handleJoinTest = async (e: React.FormEvent) => {
     e.preventDefault();

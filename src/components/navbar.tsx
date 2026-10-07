@@ -32,7 +32,7 @@ export function Navbar({ role }: { role: "TEACHER" | "STUDENT" }) {
       }
     }
     getUser();
-  }, [supabase]);
+  }, []);
 
   const handleLogout = async () => {
     await supabase.auth.signOut();
