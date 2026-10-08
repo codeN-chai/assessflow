@@ -34,6 +34,11 @@ export function EditTestSettings({
   const supabase = createClient();
 
   const handleUpdate = async () => {
+    if (code.trim().length !== 6) {
+      toast.error("Test code must be exactly 6 characters");
+      return;
+    }
+
     setLoading(true);
     try {
       const { error } = await supabase
@@ -42,12 +47,18 @@ export function EditTestSettings({
           title,
           description: description || null,
           duration: duration ? parseInt(duration) : null,
-          code: code.toUpperCase() || null,
+          code: code.trim().toUpperCase(),
           updated_at: new Date().toISOString(),
         })
         .eq("id", test.id);
 
-      if (error) throw error;
+      if (error) {
+        if (error.code === "23505") {
+          toast.error("This test code is already taken. Please choose another one.");
+          return;
+        }
+        throw error;
+      }
 
       toast.success("Test settings updated!");
       setOpen(false);

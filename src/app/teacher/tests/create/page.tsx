@@ -119,7 +119,7 @@ export default function CreateTestPage() {
                   <Input 
                     id="code" 
                     value={testCode} 
-                    onChange={(e) => setTestCode(e.target.value.toUpperCase().substring(0, 6))}
+                    onChange={(e) => setTestCode(e.target.value.toUpperCase())}
                     placeholder="e.g. BIO101"
                     className="font-mono uppercase tracking-widest text-center"
                     required
